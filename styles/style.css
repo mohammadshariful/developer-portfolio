@@ -41,6 +41,7 @@ h2 {
   color: white;
   border-radius: 5px;
 }
+
 .dream-big {
   background: url("../images/dream-bg.png") no-repeat right;
   margin-top: 140px;
@@ -74,3 +75,35 @@ footer p {
   color: orange;
   padding-bottom: 20px;
 }
+/* For mobile/small device */
+@media only screen and (max-width: 768px) {
+  .flexible-container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .half-width {
+    width: 100%;
+    margin-left: 0;
+  }
+  .half-width img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .dream-big {
+    margin-right: 0;
+    text-align: center;
+  }
+  .experience-area > h1 {
+    text-align: center;
+  }
+  .experience-item {
+    margin: auto !important;
+    width: 80% !important;
+    margin-top: 50px !important;
+  }
+}
+/* end */
